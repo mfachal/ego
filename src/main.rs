@@ -1,5 +1,6 @@
 use nom::IResult;
 mod parser;
+mod lexer;
 
 pub fn do_nothing_parser(input: &str) -> IResult<&str, &str> {
     Ok((input, ""))
